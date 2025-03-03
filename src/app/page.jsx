@@ -4,16 +4,17 @@ import { CoverBlazzingSpeed } from "@/components/CoverBlazzingSpeed"
 import HeroSection from "@/components/HeroSection"
 import { LampBox } from "@/components/LampBox"
 import Navbar from "@/components/Navbar"
+import { ProjectTimeline } from "@/components/ProjectsTimeline"
 import { Button } from "@/components/ui/button"
 
 export default function Home() {
   return (
-    <div className="w-full min-h-screen flex flex-col scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar-thumb-zinc-500 scrollbar-thin scrollbar-track-zinc-300">
+    <div className="w-full min-h-screen  flex flex-col  ">
       <Navbar/>
-<HeroSection/>
-      
+    <HeroSection/>
       <LampBox/>
       <CoverBlazzingSpeed/>
+      <ProjectTimeline />
 
     </div>
   )

@@ -20,7 +20,7 @@ function Navbar() {
   ];
 
   return (
-    <nav className="bg-gradient-to-r from-[#191919] to-[#292929]
+    <nav className="
     pb-2 pt-4 fixed top-0 left-0 right-0 z-50 backdrop-blur-sm">      
     <div className="container mx-auto flex justify-between items-center">
 
@@ -36,20 +36,17 @@ function Navbar() {
         </motion.a>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex space-x-6">
+        <div className="hidden md:flex space-x-6 ">
           {navbarItems.map((item, index) => (
             <motion.a
               key={index}
               href={item.href}
               className="text-gray-300 hover:text-white transition duration-300"
-              whileHover={{ scale: 1.1 }} // Subtle hover effect
+              whileHover={{ scale: 1.2 }} 
             >
               {item.label}
             </motion.a>
           ))}
-          <div>
-        <ModeToggle />
-      </div>
         </div>
 
         {/* Mobile Menu Button */}
@@ -81,9 +78,7 @@ function Navbar() {
           {item.label}
         </motion.a>
       ))}
-      <div className="px-4 py-2">
-        <ModeToggle />
-      </div>
+
     </motion.div>
   )}
 </AnimatePresence>
